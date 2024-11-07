@@ -7,7 +7,19 @@ This is my tech-stack that I used for developing scalable application powered by
 Run the following command:
 
 ```sh
-npx create-turbo@latest
+git clone https://github.com/cobeo2004/with-nest-prisma-ts-rest-turbo
+cd with-nest-prisma-ts-rest-turbo
+npm install
+```
+
+To sync the database
+
+```sh
+cd apps/api
+cp .env.example .env
+cd ../..
+npm run db:push
+npm run db:migrate
 ```
 
 ## What's inside?
